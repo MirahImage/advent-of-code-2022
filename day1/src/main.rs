@@ -3,8 +3,7 @@ use std::io::{self, BufRead};
 use std::path::Path;
 
 fn main() {
-    let lines = read_lines("./input").unwrap();
-    let elves = day1::lines_to_elves(lines);
+    let elves = day1::lines_to_elves(read_lines("./input").unwrap());
     let mut calories_list: Vec<i32> = elves.iter().map(|elf| { day1::total_calories(elf) }).collect();
     calories_list.sort();
     println!{"The elf with the most calories has {} calories.", calories_list[calories_list.len() - 1]}
