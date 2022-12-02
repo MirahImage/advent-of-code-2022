@@ -1,5 +1,6 @@
 [workspace]
 
 members  = [
+    "line_parser",
     "day1",
 ]
