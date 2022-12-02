@@ -36,15 +36,15 @@ mod tests {
 
     #[test]
     fn test_score_given_moves() {
-        assert_eq!(score_given_moves(&"A Y".to_string()).unwrap(), 8);
-        assert_eq!(score_given_moves(&"B X".to_string()).unwrap(), 1);
-        assert_eq!(score_given_moves(&"C Z".to_string()).unwrap(), 6);
+        assert_eq!(score_given_moves(&"A Y").unwrap(), 8);
+        assert_eq!(score_given_moves(&"B X").unwrap(), 1);
+        assert_eq!(score_given_moves(&"C Z").unwrap(), 6);
     }
 
     #[test]
     fn test_score_given_outcome() {
-        assert_eq!(score_given_outcome(&"A Y".to_string()).unwrap(), 4);
-        assert_eq!(score_given_outcome(&"B X".to_string()).unwrap(), 1);
-        assert_eq!(score_given_outcome(&"C Z".to_string()).unwrap(), 7);
+        assert_eq!(score_given_outcome(&"A Y").unwrap(), 4);
+        assert_eq!(score_given_outcome(&"B X").unwrap(), 1);
+        assert_eq!(score_given_outcome(&"C Z").unwrap(), 7);
     }
 }
