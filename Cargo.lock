@@ -17,5 +17,12 @@ dependencies = [
 ]
 
 [[package]]
+name = "day3"
+version = "0.1.0"
+dependencies = [
+ "line_parser",
+]
+
+[[package]]
 name = "line_parser"
 version = "0.1.0"
